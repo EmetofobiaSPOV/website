@@ -2329,6 +2329,12 @@
                      margin-top: 0;
                  }
 
+             /* ---------- Foto dell organigramma: inquadra il viso ---------- */
+             .avatar img {
+                 object-fit: cover;
+                 object-position: 50% 25%;
+             }
+
              .cookie-link {
                  background: none;
                  border: 0;
@@ -2535,7 +2541,7 @@
 
         <!-- ===================== ORGANIGRAMMA ===================== -->
         <!--
-          FOTO: mettere le foto in assets/foto/ con i nomi indicati qui sotto (es. giulia-baggioli.jpg).
+          FOTO: ogni foto si chiama NomeCognome.jpeg e sta nella stessa cartella di index.html (es. GiuliaBaggioli.jpeg).
           Finch&#233; la foto non c'&#232;, vengono mostrate le iniziali.
           CONTATTI E DIDASCALIE del pop-up: si modificano in assets/script.js, nella lista "PERSONE".
         -->
@@ -2548,7 +2554,7 @@
                 </div>
 
                 <div class="president">
-                    <div class="avatar">GB<img src="assets/foto/giulia-baggioli.jpg" alt="" onerror="this.remove()"></div>
+                    <div class="avatar">GB<img src="GiuliaBaggioli.jpeg" alt="" onerror="this.remove()"></div>
                     <div>
                         <span class="president__role">Presidente</span>
                         <button class="president__name" type="button" data-person="baggioli">Giulia Baggioli</button>
@@ -2562,22 +2568,22 @@
                 <h3 class="org-label">Consiglio Direttivo</h3>
                 <div class="org-grid">
                     <button class="member" type="button" data-person="perotti">
-                        <span class="avatar">AP<img src="assets/foto/alice-perotti.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">AP<img src="AlicePerotti.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Vicepresidente</span><span class="member__name">Alice Perotti</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
                     <button class="member" type="button" data-person="degregorio">
-                        <span class="avatar">GD<img src="assets/foto/ginevra-de-gregorio.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">GD<img src="GinevraDeGregorio.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Segretaria</span><span class="member__name">Ginevra De Gregorio</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
                     <button class="member" type="button" data-person="pontillo">
-                        <span class="avatar">CP<img src="assets/foto/corinne-pontillo.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">CP<img src="CorinnePontillo.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Tesoriera</span><span class="member__name">Corinne Pontillo</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
                     <button class="member" type="button" data-person="dagnino">
-                        <span class="avatar">ID<img src="assets/foto/iris-dagnino.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">ID<img src="IrisDagnino.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Consigliera</span><span class="member__name">Iris Dagnino</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
@@ -2586,17 +2592,17 @@
                 <h3 class="org-label">Professionisti convenzionati</h3>
                 <div class="org-grid">
                     <button class="member" type="button" data-person="donaera">
-                        <span class="avatar">MD<img src="assets/foto/margherita-donaera.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">MD<img src="MargheritaDonaera.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Professionista convenzionato</span><span class="member__name">Dott.ssa Margherita Donaera</span><span class="member__sub">Psicologa clinica, specializzata in sessuologia ed esperta in disturbi del comportamento alimentare (DCA)</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
                     <button class="member" type="button" data-person="congiu">
-                        <span class="avatar">IC<img src="assets/foto/ilaria-congiu.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">IC<img src="IlariaCongiu.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Professionista convenzionato</span><span class="member__name">Dott.ssa Ilaria Congiu</span><span class="member__sub">Psicologa clinica e biologa, specializzata in psicologia e psicologia perinatale</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
                     <button class="member" type="button" data-person="padova">
-                        <span class="avatar">MP<img src="assets/foto/massimiliano-padova.jpg" alt="" onerror="this.remove()"></span>
+                        <span class="avatar">MP<img src="MassimilianoPadova.jpeg" alt="" onerror="this.remove()"></span>
                         <span><span class="member__role">Professionista convenzionato</span><span class="member__name">Dott. Massimiliano Padova</span><span class="member__sub">Psicologo, psicoterapeuta e criminologo esperto in fobie</span></span>
                         <span class="member__more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14" /></svg></span>
                     </button>
@@ -2846,33 +2852,33 @@
            ========================================================= */
         const PERSONE = {
             baggioli: {
-                nome: "Giulia Baggioli", ruolo: "Presidente", iniziali: "GB", foto: "assets/foto/giulia-baggioli.jpg",
+                nome: "Giulia Baggioli", ruolo: "Presidente", iniziali: "GB", foto: "GiuliaBaggioli.jpeg",
                 didascalia: "Rappresenta l'associazione e ne coordina le attivit\u00e0 insieme al Consiglio Direttivo.",
                 contatti: [{ tipo: "email", etichetta: "Presidenza", valore: "presidenza@emetofobiaspov.org" }],
             },
             perotti: {
-                nome: "Alice Perotti", ruolo: "Vicepresidente", iniziali: "AP", foto: "assets/foto/alice-perotti.jpg",
+                nome: "Alice Perotti", ruolo: "Vicepresidente", iniziali: "AP", foto: "AlicePerrotti.jpeg",
                 didascalia: "Affianca la Presidente nella guida dell'associazione e nelle iniziative sul territorio.",
                 contatti: [{ tipo: "email", etichetta: "Per informazioni", valore: "info@emetofobiaspov.org" }],
             },
             degregorio: {
-                nome: "Ginevra De Gregorio", ruolo: "Segretaria", iniziali: "GD", foto: "assets/foto/ginevra-de-gregorio.jpg",
+                nome: "Ginevra De Gregorio", ruolo: "Segretaria", iniziali: "GD", foto: "GinevraDeGregorio.jpeg",
                 didascalia: "Segue le iscrizioni di soci e volontari e la gestione organizzativa dell'associazione.",
                 contatti: [{ tipo: "email", etichetta: "Per iscrizioni soci o volontari", valore: "segreteria@emetofobiaspov.org" }],
             },
             pontillo: {
-                nome: "Corinne Pontillo", ruolo: "Tesoriera", iniziali: "CP", foto: "assets/foto/corinne-pontillo.jpg",
+                nome: "Corinne Pontillo", ruolo: "Tesoriera", iniziali: "CP", foto: "CorinnePontillo.jpeg",
                 didascalia: "Si occupa della gestione economica, delle quote associative e dei pagamenti.",
                 contatti: [{ tipo: "email", etichetta: "Per pagamenti", valore: "tesoreria@emetofobiaspov.org" }],
             },
             dagnino: {
-                nome: "Iris Dagnino", ruolo: "Consigliera", iniziali: "ID", foto: "assets/foto/iris-dagnino.jpg",
+                nome: "Iris Dagnino", ruolo: "Consigliera", iniziali: "ID", foto: "IrisDagnino.jpeg",
                 didascalia: "Fa parte del Consiglio Direttivo e contribuisce alla vita e ai progetti dell'associazione.",
                 contatti: [{ tipo: "email", etichetta: "Per informazioni", valore: "info@emetofobiaspov.org" }],
             },
             // DA COMPLETARE: inserire i contatti diretti dei professionisti, se vogliono renderli pubblici
             donaera: {
-                nome: "Dott.ssa Margherita Donaera", ruolo: "Professionista convenzionato", iniziali: "MD", foto: "assets/foto/margherita-donaera.jpg",
+                nome: "Dott.ssa Margherita Donaera", ruolo: "Professionista convenzionato", iniziali: "MD", foto: "MargheritaDonaera.jpeg",
                 didascalia: "Psicologa clinica, specializzata in sessuologia ed esperta in disturbi del comportamento alimentare (DCA). Per essere messi in contatto, scrivici.",
                 contatti: [
                     { tipo: "email", etichetta: "Richiedi un contatto", valore: "info@emetofobiaspov.org" },
@@ -2880,7 +2886,7 @@
                 ],
             },
             congiu: {
-                nome: "Dott.ssa Ilaria Congiu", ruolo: "Professionista convenzionato", iniziali: "IC", foto: "assets/foto/ilaria-congiu.jpg",
+                nome: "Dott.ssa Ilaria Congiu", ruolo: "Professionista convenzionato", iniziali: "IC", foto: "IlariaCongiu.jpeg",
                 didascalia: "Psicologa clinica e biologa, specializzata in psicologia e psicologia perinatale. Per essere messi in contatto, scrivici.",
                 contatti: [
                     { tipo: "email", etichetta: "Richiedi un contatto", valore: "info@emetofobiaspov.org" },
@@ -2888,7 +2894,7 @@
                 ],
             },
             padova: {
-                nome: "Dott. Massimiliano Padova", ruolo: "Professionista convenzionato", iniziali: "MP", foto: "assets/foto/massimiliano-padova.jpg",
+                nome: "Dott. Massimiliano Padova", ruolo: "Professionista convenzionato", iniziali: "MP", foto: "MassimilianoPadova.jpeg",
                 didascalia: "Psicologo, psicoterapeuta e criminologo esperto in fobie. Per essere messi in contatto, scrivici.",
                 contatti: [
                     { tipo: "email", etichetta: "Richiedi un contatto", valore: "info@emetofobiaspov.org" },
